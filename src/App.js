@@ -21,7 +21,7 @@ const App = () => {
             <Sidebar />
           </div>
 
-          <div className=" bg-gray-50 w-full  overflow-y-scroll max-h-screen">
+          <div className=" bg-gray-900 w-full  overflow-y-scroll max-h-screen">
             <Route exact path="/" component={Hashnode} />
             <Route exact path="/dev" component={Dev} />
             <Route exact path="/hackernews" component={Hackernews} />

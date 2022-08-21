@@ -49,15 +49,15 @@ const Techcrunch = () => {
                                     <a href={story.link}
                                         target="_blank" rel="noreferrer"
                                     >
-                                        <div className=" py-auto shadow-sm hover:shadow flex md:flex-row flex-col items-center bg-white rounded-md  text-left m-2">
+                                        <div className=" py-auto shadow-sm hover:shadow flex md:flex-row flex-col items-center bg-gray-700 rounded-md  text-left m-2">
                                             <img src={story.image === '' ? 'https://picsum.photos/seed/picsum/200/150' : story.image}
                                                 alt="cover-img" className="md:w-80 w-full h-60 object-cover p-4 rounded"
                                             />
                                             <div className="flex flex-col p-6">
-                                                <h3 className="text-2xl font-semibold mb-2">
+                                                <h3 className="text-2xl text-white font-semibold mb-2">
                                                     {story.title}
                                                 </h3>
-                                                <p lassName="text-gray-500 text-sm">{story.description}...</p>
+                                                <p className="text-white text-sm">{story.description}...</p>
                                             </div>
 
                                         </div>

@@ -48,10 +48,10 @@ const Dev = () => {
                                     <a href={post.url}
                                         target="_blank" rel="noreferrer"
                                     >
-                                        <div className="w-72 h-72 py-auto shadow hover:shadow-lg flex flex-col bg-white rounded-md p-4 text-left m-2">
+                                        <div className="w-72 h-72 py-auto shadow hover:shadow-lg flex flex-col bg-gray-700 rounded-md p-4 text-left m-2">
                                             <img src={post.social_image === '' ? 'https://picsum.photos/seed/picsum/200/150' : post.social_image}
                                                 alt="cover-img" className="rounded border border-gray-200" />
-                                            <h3 className="text-xl text-gray-700 mt-2">
+                                            <h3 className="text-xl text-white mt-2">
                                                 {post.title}
                                             </h3>
                                         </div>

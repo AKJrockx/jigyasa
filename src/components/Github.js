@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import githubIcon from '../assets/images/github.png';
-import starIcon from '../assets/icons/star.svg';
-import forkIcon from '../assets/icons/fork.svg';
+import starIcon from '../assets/icons/star.png';
+import forkIcon from '../assets/icons/fork.png';
 import Fade from 'react-reveal/Fade';
 import { ThreeDots } from 'svg-loaders-react'
+import Crousel from './Crousel';
 
 
 
@@ -32,6 +33,8 @@ const Github = () => {
                 title='Github'
             />
 
+            <Crousel/>
+
             {
                 (loading === true) ?
                     <div className="flex justify-center my-48">
@@ -42,12 +45,12 @@ const Github = () => {
                         {reposList.map(repo => {
                             return (
                                 <Fade bottom key={repo.name}>
-                                    <div className="bg-white w-8/12 mx-auto p-4 px-8 rounded-md m-2 text-left">
+                                    <div className="bg-gray-700 w-8/12 mx-auto p-4 px-8 rounded-md m-2 text-left">
                                         <a href={repo.url} target="-blank" rel="noreffer">
-                                            <h3 className="text-xl font-semibold text-blue-500">
+                                            <h3 className="text-xl font-semibold text-blue-400">
                                                 {repo.name}
                                             </h3>
-                                            <span className="text-md">
+                                            <span className="text-md text-white">
                                                 {repo.description}
                                             </span>
 
@@ -55,17 +58,17 @@ const Github = () => {
                                                 <div className="flex mr-2 text-sm">
                                                     <div className="m-1 h-4 w-4 rounded-full"
                                                         style={{ backgroundColor: `${repo.languageColor}` }}></div>
-                                                    <span className="m-1">
+                                                    <span className="m-1 text-white">
                                                         {repo.language}
                                                     </span>
                                                 </div>
                                                 <div className="flex mr-2">
                                                     <img src={starIcon} alt="star" className="m-1 h-4 w-4" />
-                                                    <span>{repo.stars}</span>
+                                                    <span className="text-white">{repo.stars}</span>
                                                 </div>
                                                 <div className="flex mr-2">
                                                     <img src={forkIcon} alt="fork" className="m-1 h-4 w-4" />
-                                                    <span className="mx-2">{repo.forks}</span>
+                                                    <span className="mx-2 text-white">{repo.forks}</span>
                                                 </div>
                                             </div>
 
