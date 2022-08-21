@@ -6,6 +6,7 @@ import hackernewsIcon from '../assets/images/hackernews.png';
 import producthuntIcon from '../assets/images/producthunt.png';
 import githubIcon from '../assets/images/github.png';
 import techcrunchIcon from '../assets/images/techcrunch.png';
+import logo from '../assets/images/main_logo.png';
 
 
 
@@ -16,10 +17,12 @@ const Sidebar = () => {
 
 
             <div className="bg-gray-700 p-4 flex items-center rounded-xl shadow-sm">
-                <span className="bg-gray-800 p-2 text-2xl rounded-xl mr-2">🚀</span>
+                <span className="bg-gray-800 p-2 text-2xl rounded-xl mr-2">
+                    <img className="w-20" src={logo}></img>
+                </span>
                 <div>
                     <h1 className="text-2xl text-white font-bold   ">
-                        Devspace
+                        Jigyasa
                     </h1>
                     <span className="text-gray-400 italic text-sm">
                         Top posts from the best dev sites.
